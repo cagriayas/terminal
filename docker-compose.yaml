@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+
+  apache:
+    image: php:apache
+    container_name: terminal_app
+    ports:
+      - "8080:80"
+    volumes:
+      - /Users/cagriayas/Desktop/terminal:/var/www/html
+    #command: bash -c "a2enmod rewrite && service apache2 restart"
+
+volumes:
+  mysql_data:
+
